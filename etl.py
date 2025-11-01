@@ -1,4 +1,5 @@
 import pandas as pd 
+import streamlit as st
 
 data = {
     "Task": ["Extract","Transform","Load"],
@@ -7,3 +8,5 @@ data = {
 
 df = pd.DataFrame(data)
 
+st.title("streamlit app")
+st.write(df)
