@@ -1,13 +1,12 @@
-import pandas as pd 
 import streamlit as st 
+import pandas as pd 
 
-st.write('Welcome to AVD')
 
 data = {
-    "Task":["Extract", "Transform" , "Load"],
-    "Status":["Completed" , "InProgress" , "Pending"]
-
+    "Task": ["Extract","Transform","Load"],
+    "Status": ["Completed", "InProgress", "Pending"]   
 }
-
 df = pd.DataFrame(data)
-st.write("ETL Processing Status :",df)
+
+st.title("streamlit app")
+st.write(df)
