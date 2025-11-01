@@ -8,7 +8,7 @@ pipeline {
           }
           stage("Cleanup Stage") {
             steps{
-                 bat'''
+                 bat '''
                  for /f %%i in ('docker ps -aq') do docker rm -f %%i
                  '''
             }
